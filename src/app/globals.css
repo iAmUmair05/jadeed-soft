@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0c111d;
+  color: #d1d5dc;
+  font-family: Arial, sans-serif;
+}
+
+@layer components {
+  .main-heading {
+    @apply text-center text-heading text-4xl sm:text-5xl font-bold leading-tight sm:mb-6 mb-3;
+  }
+
+  .btn-redish {
+    @apply py-2 px-5 bg-heading text-white rounded-full shadow-md duration-200;
+  }
+
+  .custom-container {
+    @apply max-w-[95vw] mx-auto p-2;
+  }
+
+  .input-field {
+    @apply w-full rounded-md border border-heading py-1 px-3 text-base text-para outline-none focus:border-heading focus:shadow-md;
+  }
+}
